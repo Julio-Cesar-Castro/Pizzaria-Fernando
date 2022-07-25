@@ -1,0 +1,420 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8c1717;
+}
+
+.container {
+  width: 95%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container article {
+  width: 60px;
+  height: 60px;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.container nav {
+  width: 25%;
+}
+
+.container ul {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 1s;
+}
+
+.container li:hover {
+  font-size: 18px;
+}
+
+.container a:hover {
+  color: #000;
+}
+
+main {
+  width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container_main {
+  width: 100%;
+  height: calc(115vh - 12vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./Images/fumdo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+.container_whitebox {
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.container_whitebox article {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+article h2 {
+  font-size: 50px;
+  color: #8c1717;
+}
+
+article h1 {
+  font-size: 75px;
+  text-align: center;
+}
+
+article p {
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.container_buttons {
+  width: 100%;
+  height: calc(100% - 65%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftSide,
+.rightSide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.leftSide p,
+.rightSide p {
+  text-transform: uppercase;
+  color: #8c1717;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  width: 100%;
+}
+
+.leftSide button,
+.rightSide button {
+  width: 140px;
+  height: 40px;
+  border-radius: 5%;
+  border: 2px solid rgb(140, 23, 23);
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn a {
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+.btn::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(140, 23, 23, 0.9);
+  top: 0;
+  left: 0;
+  transition: all 1.5s;
+  z-index: 1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+footer {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8c1717;
+}
+
+.container_footer {
+  width: 80%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_footer article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container_footer-p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Contact part */
+
+.container_main_menu {
+  width: 100%;
+  height: calc(115vh - 12vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./Images/fundo2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+.boxMenu {
+  width: 90%;
+  height: 95%;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+
+.menuText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid #000;
+}
+
+.menuText h2 {
+  color: #8c1717;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.menuOptions {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuOptions div {
+  gap: 5px;
+}
+
+.leftmenuPart {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid black;
+  margin-top: 15px;
+}
+
+.leftmenuPart h3 {
+  margin-left: 8px;
+  color: #8c1717;
+}
+
+.leftmenuPart p {
+  margin-left: 15px;
+}
+
+.rigthmenuPart {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #000;
+  margin-top: 15px;
+}
+
+.rigthmenuPart h3 {
+  margin-left: 8px;
+  color: #8c1717;
+}
+
+.rigthmenuPart p {
+  margin-left: 15px;
+}
+
+.container_gray {
+  height: 12%;
+  background-color: rgba(105, 105, 105, 0.4);
+}
+
+.container_white {
+  height: 12%;
+}
+
+/* contact part */
+
+.contact {
+  width: 100%;
+  height: calc(115vh - 12vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./Images/fundo2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+.contactBox {
+  width: 80%;
+  height: 90%;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutContact {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.aboutContact figure {
+  width: 20px;
+  height: 20px;
+}
+
+.aboutContact img {
+  width: 100%;
+  height: 100%;
+}
+
+.emailDiv,
+.phoneDiv,
+.whatsDiv,
+.locationDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  height: 20%;
+  gap: 10px;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.aboutUs {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #000;
+}
+
+.aboutUs p {
+  height: 30%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.map {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.redText {
+  color: #8c1717;
+}
